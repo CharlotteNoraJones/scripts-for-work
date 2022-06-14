@@ -1,0 +1,3 @@
+window.addEventListener('load', (event) => {
+    document.getElementsByClassName("right-left-menu")[0].style.visibility = 'hidden';
+});

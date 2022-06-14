@@ -1,0 +1,11 @@
+if ("#home") {
+
+    setInterval(() => {
+
+        try {
+            document.querySelector('#programs-v2').__vue__.next();
+        } catch {
+            document.querySelector('#programs-v2').__vue__.$children[0].next();
+        }
+    }, 5000)
+}

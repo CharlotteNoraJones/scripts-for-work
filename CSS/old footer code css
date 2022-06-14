@@ -1,0 +1,108 @@
+#view-footer #footer-f1 .footer-columns.idea[data-v-8d4dac12] {
+    flex-grow: 2;
+}
+
+.row.second-row {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.row.second-row .heading-content {
+    text-align: left;
+}
+
+.row.second-row h4 {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+
+.row.second-row h3 {
+    font-size: 90px;
+    line-height: 94px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.heading-content {
+    display: inline-block;
+}
+
+#view-footer #footer-f1 .row.logos-row .footer-column-main,
+#view-footer #footer-f1 .row.logos-row .footer-columns {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: inherit;
+}
+
+#view-footer #footer-f1 .footer-column-main {
+    padding-right: 0;
+}
+
+#view-footer #footer-f1 h2 a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 780px) {
+    #view-footer #footer-f1 .row.logos-row .footer-column-last[data-v-8d4dac12] {
+        width: 100%;
+        text-align: center;
+    }
+
+    #view-footer #footer-f1 .row.logos-row .footer-column-last[data-v-8d4dac12] .app-link {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #cms-footer[data-v-7e9d0fd8] {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    #view-footer #footer-f1 .row.logos-row {
+        display: block;
+        text-align: center;
+    }
+
+    #view-footer #footer-f1 .row.logos-row .footer-column-main,
+    #view-footer #footer-f1 .row.logos-row .footer-columns {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #view-footer #footer-f1 .row.logos-row .footer-column-main img,
+    #view-footer #footer-f1 .row.logos-row .footer-columns img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #view-footer #footer-f1 .row.second-row h4 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    #view-footer #footer-f1 .row.second-row h3 {
+        font-size: 54px;
+        line-height: 60px;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    #view-footer #footer-f1 .row.second-row h4 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    #view-footer #footer-f1 .row.second-row h3 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+
+ul.footer-social-linf.normal-window li {
+    display: inline-block;
+}

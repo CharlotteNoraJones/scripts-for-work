@@ -1,0 +1,18 @@
+//This script changes the title, link, and link destination of the second events section. 
+
+window.addEventListener("load", (event) => {
+    changeEventText();
+});
+
+
+// same as above function, but on scroll
+$(window).scroll(function () {
+    changeEventText();
+});
+
+function changeEventText(){
+  document.querySelectorAll("#events-e1 > div.see-all-container.see-all-top.light > div.header-slot-container > h2")[1].innerText = "Athletics";
+  document.querySelectorAll("#events-e1 > div.see-all-container.see-all-top.light > a")[1].innerText = "See All Athletic Events";
+
+  document.querySelectorAll("#events-e1 > div.see-all-container.see-all-top.light > a")[1].setAttribute('href', 'https://jimthorpeasdpa.sites.thrillshare.com/events?start_date=2022-02-01&end_date=2022-02-28&section_ids=173022');
+}

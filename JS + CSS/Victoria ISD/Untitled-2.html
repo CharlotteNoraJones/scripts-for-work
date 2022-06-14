@@ -1,0 +1,24 @@
+<script src="//www.k12insight.com/Lets-Talk/EmbedJS.aspx"></script>
+<div style="width:100%;max-width:750px;height:1400px;-webkit-overflow-scrolling:touch;overflow-x:auto;overflow-y:hidden;">
+    <iframe onload="setHeight(this)" width="100%" height="100%" frameborder="0" id="ifletstalk" src="//www.k12insight.com/Lets-Talk/embed.aspx?L=PK1F62Z5G4LT">
+    </iframe>
+</div>
+
+<script>
+    // expand menu v3
+    $(window).on("load", function () {
+        $("#menubutton").click(function () {
+            $("#m3 div.generated-links ul li.has-child").attr("class", "has-child open");
+        });
+    });
+
+    window.addEventListener('resize', (event) => {
+        $("#m3 div.generated-links ul li.has-child").attr("class", "has-child open");
+    });
+
+    setTimeout(() => {
+        $("#menubutton").click(function () {
+            $("#m3 div.generated-links ul li.has-child").attr("class", "has-child open");
+        });
+    }, 2000);
+</script>

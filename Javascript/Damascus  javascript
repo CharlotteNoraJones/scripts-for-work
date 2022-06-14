@@ -1,0 +1,17 @@
+window.addEventListener("load", (event) => {
+    
+    // Changes "Schools" menu in header to a "School" button that links to School site. This is how their header worked in cmsv1.
+    // Disabled becuase custom code in the head must be discussed with Jesson before being applied. Also, this implementation is jank.
+    //document.querySelector(".schools-menu-container").innerHTML = "<h2> <a href=https://damascusor.sites.thrillshare.com/o/damascus-christian-school>School</a> </h2>";
+
+    // Changes "Sites" in footer to "Pages" to match v1 site.
+    document.querySelectorAll("#footer-f1 div div.footer-columns h2")[0].innerText = "Pages";
+
+    // Removes Oregon from address.
+    document.querySelector("#footer-f1 div div.footer-column-main p span:nth-child(3)").innerText = "Damascus, OR 97089";
+
+    // Changes "Find Us" in footer to "Contact" to match v1 site.
+    document.querySelectorAll("#footer-f1 div div.footer-column-main h2")[0].innerText = "Contact";
+
+
+});

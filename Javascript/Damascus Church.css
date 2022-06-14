@@ -1,0 +1,4 @@
+/* Hides the "Sites" menu, as it is made redundant by the "Church" button. */
+#h2 div.header-container div.right div.right-menu-items div:nth-child(2){
+    display: none;
+}

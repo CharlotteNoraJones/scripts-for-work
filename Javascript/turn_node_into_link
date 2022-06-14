@@ -1,0 +1,7 @@
+//Turns target into a Link
+//Uses jquery
+window.addEventListener('load', (event) => {
+    let subject = $("#footer-f1 > div > div.footer-column-main > div.logo-wrapper > img");
+    let a = $("<a/>").attr("href", "https://sites.google.com/a/pettisvilleschools.org/intranet/home").attr( 'target','_blank' );
+    subject.wrap(a);
+});

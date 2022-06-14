@@ -1,0 +1,27 @@
+/* Styles events section custom button.*/
+.btn-1 {
+    background: #512F75;
+    color: #000000;
+    cursor: pointer;
+    font-size: initial;
+    padding: 12px;
+    border: 0;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    position: relative;
+    font-weight: bolder;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 116px;
+    margin-left: 15px;
+}
+
+.btn-1 a {
+  color: white;
+  text-decoration: none;}
+
+  /*Forces the "See All Events" button in the Events section nearer to it's original position, since the method we used to add the the button moved it to the right. */
+#events-e4 div div.see-all-container.see-all-top.light a {
+  margin-left: auto !important;
+}

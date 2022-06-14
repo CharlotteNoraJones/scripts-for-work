@@ -1,0 +1,13 @@
+// Clicks the forward button in the "Ram Pride" section to automatically cycle through events. 
+const interval = setInterval(function () {
+    if ("#home") {
+        document.querySelector("#programs-v2 > div.main-program > div.main-program-image > div.light-bold.arrows > div.right-arrow-button").click();
+        document.querySelector("#g3 > div > div.navigation > button").click();
+    }
+}, 1000);
+
+//Test Line
+document.querySelector("#g3 > div > div.navigation > button").click();
+
+////Test Line
+document.querySelector("#programs-v2 > div.main-program > div.main-program-image > div.light-bold.arrows > div.right-arrow-button").style.opacity = "50%";

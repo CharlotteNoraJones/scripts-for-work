@@ -1,0 +1,17 @@
+//This script changes the title, link, and link destination of the second events section. 
+window.addEventListener("load", (event) => {
+    changeEventText();
+});
+
+
+// same as above function, but on scroll
+$(window).scroll(function () {
+    changeEventText();
+});
+
+function changeEventText(){
+  document.querySelector("#events-e4 > div > div.see-all-container.see-all-top.light > div.header-slot-container > h2").innerText = "Athletics";
+  document.querySelector("#events-e4 > div > div.see-all-container.see-all-top.light > a").innerText = "See All Athletic Events";
+
+  document.querySelector("#events-e4 > div > div.see-all-container.see-all-top.light > a").setAttribute('href', 'https://www.massillonschools.org/events?start_date=2022-03-01&end_date=2022-03-31&section_ids=179930');
+}

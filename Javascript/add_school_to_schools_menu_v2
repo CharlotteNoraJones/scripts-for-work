@@ -1,0 +1,41 @@
+/*
+* Adds "San Diego Riverside Charter School" to the Schools menu
+* https://app.asana.com/0/1201388388286192/1202413166576212
+*/
+
+window.addEventListener("load", (event) => {
+
+    //Replace the vars below with the school and school's url
+    let school = "San Diego Riverside Charter School";
+    let schoolURL = "https://www.jvps.org/page/sdrcs"
+
+
+    document.getElementById("schoolsbutton").addEventListener("click", (event) => {
+        let schoolsList = document.querySelector("#schoolsmenu ul");
+        schoolsList.appendChild(makeSchoolListing(school, schoolURL));
+
+    });
+
+});
+
+// Adds a school to the default schools menu
+function addSchool(school, url) {
+    let schoolsList = document.querySelector("#schoolsmenu ul");
+    schoolsList.appendChild(makeSchoolListing(school, url));
+}
+
+// Creates the school element
+function makeSchoolListing(name, url) {
+    let newSchool = document.createElement('li');
+    newSchool.setAttribute("role", "menuitem");
+    newSchool.innerHTML = ('<a data-v-f802fc8e="" href="' + url + '" class="link-school">' + name + '</a>');
+
+    // Applies styling to new list item.
+    newSchool.firstChild.style.fontSize = "18px";
+    newSchool.firstChild.style.fontWeight = "400";
+    newSchool.firstChild.style.lineHeight = "20px";
+    newSchool.style.marginTop = "35px";
+
+    return newSchool;
+}
+

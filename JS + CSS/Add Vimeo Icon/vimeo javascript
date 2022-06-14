@@ -1,0 +1,6 @@
+
+window.addEventListener("load", (event) => {
+  $("#footer-f1 .footer-column-last .footer-social-links").append(
+    '<li class="tw"><a href="https://www.facebook.com/The-CAT-EYE-PRSD-787915644651646/" target="_blank" data-v-293ad484=""><img src=" https://5il.co/12v6l" width="48" height="48"></a></li>'
+  );
+});

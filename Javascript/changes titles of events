@@ -1,0 +1,18 @@
+window.addEventListener("load", (event) => {
+  document.querySelectorAll("#events-e1 > div.see-all-container.see-all-top.light > div.header-slot-container > h2")[0].innerText = "Prairie School Events";
+  document.querySelectorAll("#events-e1 > div.see-all-container.see-all-top.light > div.header-slot-container > h2")[1].innerText = "Athletic Events";
+  
+  document.querySelectorAll("#events-e1 > div.see-all-container.see-all-top.light > a")[0].setAttribute('href', 'https://www.prairieschool.org/events?section_ids=48414');
+  document.querySelectorAll("#events-e1 > div.see-all-container.see-all-top.light > a")[1].setAttribute('href', 'https://www.prairieschool.org/events?section_ids=72953');
+
+});
+
+
+// same as above function, but on scroll
+$(window).scroll(function () {
+    document.querySelectorAll("#events-e1 > div.see-all-container.see-all-top.light > div.header-slot-container > h2")[0].innerText = "Prairie School Events";
+    document.querySelectorAll("#events-e1 > div.see-all-container.see-all-top.light > div.header-slot-container > h2")[1].innerText = "Athletic Events";
+    
+    document.querySelectorAll("#events-e1 > div.see-all-container.see-all-top.light > a")[0].setAttribute('href', 'https://www.prairieschool.org/events?section_ids=48414');
+    document.querySelectorAll("#events-e1 > div.see-all-container.see-all-top.light > a")[1].setAttribute('href', 'https://www.prairieschool.org/events?section_ids=72953');
+});

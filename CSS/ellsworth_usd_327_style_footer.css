@@ -1,0 +1,217 @@
+/*
+* Styles the custom footer. 
+* https://app.asana.com/0/1201388388286192/1202276759415543
+*/
+
+#footer-f1 {
+    padding: 0 32px;
+}
+
+#footer-f1 div.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-f1 div:nth-child(1) div:nth-child(1) {
+    display: block;
+}
+
+.row .footer-columns h2 {
+    margin-bottom: 12px;
+}
+
+.row .footer-columns h2 a {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-decoration: underline;
+}
+
+#footer-f1 div.row.second-row {
+    margin: 32px 0;
+}
+
+#footer-f1 div.row.second-row div div {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.row.second-row h4 {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+
+.row.second-row h3 {
+    font-size: 90px;
+    line-height: 94px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.heading-content {
+    display: inline-block;
+}
+
+#view-footer #footer-f1 .row.logos-row .footer-column-main,
+#view-footer #footer-f1 .row.logos-row .footer-columns {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: inherit;
+}
+
+#footer-f1 div.row.logos-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-f1 div.row.logos-row div.footer-column-main a {
+    display: block;
+  }
+
+#footer-f1 div.row.logos-row div.footer-columns.idea {
+    flex-grow: 0;
+}
+
+#footer-f1 div.row.logos-row div.footer-column-last h2 {
+    font-size: 1.5em;
+}
+
+#footer-f1 div.row.logos-row div.footer-column-last ul {
+    padding-left: 0px;
+}
+
+#footer-f1 div.row.logos-row div.footer-column-last ul li img {
+    height: 48px;
+    width: auto;
+}
+
+#footer-f1 div.row.logos-row div.footer-column-last a:nth-child(3) {
+    display: block;
+
+}
+
+#footer-f1 {
+    padding: 0 32px;
+}
+
+#footer-f1 div.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-f1 div:nth-child(1)>div:nth-child(1) {
+    display: block;
+}
+
+.row .footer-columns h2 {
+    margin-bottom: 12px;
+}
+
+.row .footer-columns h2 a {
+    color: white;
+    text-decoration: underline;
+}
+
+#footer-f1 div.row.second-row div div {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#footer-f1 div.row.logos-row {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+#footer-f1 div.row.logos-row div.footer-columns.idea {
+    flex-grow: 0 !important;
+}
+
+#footer-f1 div.row.logos-row div.footer-column-last h2 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-size: 1.5em;
+}
+
+#footer-f1 div.row.logos-row div.footer-column-last ul {
+    padding-left: 0px;
+}
+
+#footer-f1 div.row.logos-row div.footer-column-last ul li img {
+    height: 48px;
+    width: auto;
+}
+
+#footer-f1 div.row.logos-row div.footer-column-last .social-media-links a {
+    display: block;
+}
+
+#footer-f1 div.row.logos-row div.footer-column-last .social-media-links img {
+    height: 72px;
+}
+
+
+@media only screen and (max-width: 780px) {
+    #view-footer #footer-f1 .row.logos-row .footer-column-last[data-v-8d4dac12] {
+        width: 100%;
+        text-align: center;
+    }
+
+    #view-footer #footer-f1 .row.logos-row .footer-column-last[data-v-8d4dac12] .app-link {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #cms-footer[data-v-7e9d0fd8] {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    #view-footer #footer-f1 .row.logos-row {
+        display: block;
+        text-align: center;
+    }
+
+    #view-footer #footer-f1 .row.logos-row .footer-column-main,
+    #view-footer #footer-f1 .row.logos-row .footer-columns {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #view-footer #footer-f1 .row.logos-row .footer-column-main img,
+    #view-footer #footer-f1 .row.logos-row .footer-columns img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #view-footer #footer-f1 .row.second-row h4 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    #view-footer #footer-f1 .row.second-row h3 {
+        font-size: 54px;
+        line-height: 60px;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    #view-footer #footer-f1 .row.second-row h4 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    #view-footer #footer-f1 .row.second-row h3 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+
+ul.footer-social-linf.normal-window li {
+    display: inline-block;
+}

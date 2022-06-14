@@ -1,0 +1,8 @@
+/*Adjust the size at which the Programs section switches to a two-column layout in order to prevent text from being cropped.
+https://app.asana.com/0/1201388388286192/1202167978734362 */
+@media screen and (max-width: 1450px) and (min-width: 1000px) {
+    .programs-wrapper .program {
+        width: 48% !important;
+        margin: 10px auto !important;
+    }
+}

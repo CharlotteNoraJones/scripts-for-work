@@ -1,0 +1,27 @@
+//This code is used to add a school to the default schools menu, so you won't have to add a custom schools menu just to add one school. 
+
+window.addEventListener("load", (event) => {
+
+//Replace the vars below with the school and school's url
+var school = "Coding School";
+var schoolURL = "https://www.google.com/"
+
+document.getElementById("schoolsbutton").addEventListener("click", addSchool);
+
+function addSchool() {
+    var schoolsList = document.querySelector("#schoolsmenu ul"); 
+    var newSchool = document.createElement('li');
+    newSchool.setAttribute("role", "menuitem");
+
+    newSchool.innerHTML = ('<a data-v-f802fc8e="" href="' + schoolURL + '" class="link-school">' + school + '</a>');
+
+    // Applies styling to new list item.
+    newSchool.firstChild.style.fontSize = "18px";
+    newSchool.firstChild.style.fontWeight = "400";
+    newSchool.firstChild.style.lineHeight = "20px";
+    newSchool.style.marginTop = "35px";
+
+
+    schoolsList.appendChild(newSchool);
+}
+});

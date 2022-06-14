@@ -1,0 +1,6 @@
+// Adds custom button to events section. 
+$(window).on("load", function () {
+    $("#events-e4 > div > div.see-all-container.see-all-top.light > a").after('<div><button class="btn-1"><a href="https://striv.tv/channel/fillmore-central/" target="_blank">Livestream</a></button></div>');
+});
+
+
