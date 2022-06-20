@@ -1,0 +1,31 @@
+/*
+* Adds background images to the Spotlight and Live Feed Sections
+* https://app.asana.com/0/1201388388286192/1202467013515562
+*/
+
+#view-spotlight {
+    background-image: url(https://5il.co/1cjmf);
+    background-size: cover;
+    background-position: center;
+}
+
+#view-spotlight div.spotlight-quote p {
+    font-weight: 500;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    #cms-live-feed:before {
+        content: "";
+        position: absolute;
+        left: 54%;
+        top: 10%;
+        width: 60%;
+        height: 60%;
+        background: url(https://5il.co/1cjmg) no-repeat center center;
+        background-size: 50%;
+        opacity: 0.1;
+        z-index: 0;
+    }
+
+}
