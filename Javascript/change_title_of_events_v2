@@ -1,4 +1,6 @@
-//This script changes the title, link, and link destination of the second events section. 
+// This script changes the title, link, and link destination of the second events section.
+// It also makes each event section link to a filtered events page. 
+// https://app.asana.com/0/1201388388286192/1202484227639238
 window.addEventListener("load", (event) => {
     changeEventText();
 });
@@ -10,8 +12,9 @@ $(window).scroll(function () {
 });
 
 function changeEventText(){
-  document.querySelector("#events-e4 > div > div.see-all-container.see-all-top.light > div.header-slot-container > h2").innerText = "Athletics";
-  document.querySelector("#events-e4 > div > div.see-all-container.see-all-top.light > a").innerText = "See All Athletic Events";
+  document.querySelectorAll("#events-e1 > div.see-all-container.see-all-top.light > div.header-slot-container > h2")[1].innerText = "Activities";
+  document.querySelectorAll("#events-e1 > div.see-all-container.see-all-top.light > a")[1].innerText = "See All Activities";
 
-  document.querySelector("#events-e4 > div > div.see-all-container.see-all-top.light > a").setAttribute('href', 'https://www.massillonschools.org/events?start_date=2022-03-01&end_date=2022-03-31&section_ids=179930');
+  document.querySelectorAll("#events-e1 > div.see-all-container.see-all-top.light > a")[0].setAttribute('href', '/o/snowflakejh/events?section_ids=117567');
+  document.querySelectorAll("#events-e1 > div.see-all-container.see-all-top.light > a")[1].setAttribute('href', '/o/snowflakejh/events?section_ids=206981');
 }

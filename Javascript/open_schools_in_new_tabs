@@ -1,7 +1,0 @@
-/*
-* Forces the schools links in the Schools menu and footer to open in new tabs.
-* https://app.asana.com/0/1201388388286192/1202308202301901
-*/
-
-
-document.getElementById("schoolsbutton").addEventListener("click", addSchool(school, schoolURL));
