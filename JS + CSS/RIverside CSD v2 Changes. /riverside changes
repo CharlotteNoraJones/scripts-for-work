@@ -1,4 +1,0 @@
-/* Hides the middel column of the footer */
-#footer-f1 div div.footer-columns {
-  display: none;
-}
