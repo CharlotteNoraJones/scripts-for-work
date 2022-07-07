@@ -39,7 +39,7 @@ function deepEqual(a, b) {
     values_equality = true;
 
     a_keys.forEach((key) => {
-        if(!deepEqual(a[key], b[key])) {
+        if (!deepEqual(a[key], b[key])) {
             values_equality = false;
         }
     });
