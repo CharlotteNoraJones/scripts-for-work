@@ -1,0 +1,22 @@
+/*
+* Styles extra images in the footer's last column. 
+* https://app.asana.com/0/1201388388286192/1202574898506815
+*/
+
+.org-images {
+  margin-bottom: 32px;
+}
+
+.org-images h2 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-bottom: 12px;
+
+}
+
+.org-images img {
+  display: block;
+  width: 216px;
+  margin-bottom: 12px;
+}

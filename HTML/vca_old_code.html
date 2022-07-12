@@ -1,0 +1,77 @@
+<div class="image-section">
+    <img src="https://5il.co/zlt6" class="celebrating">
+    <a href="https://www.vcacademy.info/page/employment" class="hiring" target="_blank"><img src="https://5il.co/1b62m"
+            alt="We are Hiring"></a>
+</div>
+
+<style>
+    .image-section {
+        background: #5D1D74 url(https://5il.co/11qiq) no-repeat top center;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        padding: 5vw 30px;
+        border-bottom: 4px solid #eddd90;
+        border-top: 4px solid #eddd90;
+        min-height: 300px;
+        box-sizing: border-box;
+    }
+
+    .image-section img.celebrating {
+        max-width: 90%;
+        max-height: 241px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .image-section .hiring img {
+        width: 210px;
+        max-width: 90%;
+        height: auto;
+        object-fit: contain;
+        margin-left: 5vw;
+        display: block;
+    }
+
+    @media only screen and (max-width: 890px) {
+        .image-section {
+            flex-direction: column;
+        }
+
+        .image-section .hiring img {
+            margin-left: 0;
+        }
+    }
+</style>
+
+<script>
+    1
+    !function (a, b, c, d) { "use strict"; function e(b, c) { this.element = b, this.settings = a.extend({}, g, c), this.controller = { currentSpeed: 0 }, this.init() } var f = "infiniteScroller", g = { maxSpeed: 20, speed: 1, scrollOnMouseOver: !0, resetOnMouseOut: !0, direction: "left" }; a.extend(e.prototype, { init: function () { var b = this.settings, c = a(this.element); c.wrapInner("<div class='slide-wrap'><div class='slide-data' /></div>"); var d = c.find(".slide-data"), e = c.find(".slide-wrap"), f = d.children("ul"), g = this.controller; "right" === b.direction && (b.speed = -1 * b.speed); var h = b.speed; c.addClass("slide-pane"); var i = 0; f.children().each(function () { a(this).height() > i && (i = a(this).height()) }), e.height(i), f.children().clone().appendTo(f); var j = 0; f.children().each(function () { var b = a(this); b.css("left", j), j += b.outerWidth(!0) }); var k = j / 2, l = d.width(), m = function () { var a = d.scrollLeft(), b = a + g.currentSpeed; b > 2 * k - l ? b -= k : b < 0 && (b += k), d.scrollLeft(b) }; setInterval(m, 20), this.tweenToNewSpeed(h), b.scrollOnMouseOver && this.scrollOnMouseOver(d), c.css("visibility", "visible") }, tweenToNewSpeed: function (b, c) { c === d && (c = 0), a(this.controller).stop(!0).animate({ currentSpeed: b }, c) }, scrollOnMouseOver: function (c) { var d = this.settings, e = this; c.mousemove(function (c) { var f = a(b).width(), g = f / 2, h = c.pageX, i = 0, j = d.maxSpeed; i = h < g ? -(100 - (h / g * 100).toFixed(2)) : ((h - g) / g * 100).toFixed(2), j *= i / 100, e.tweenToNewSpeed(j) }), d.resetOnMouseOut && c.mouseout(function () { e.tweenToNewSpeed(d.speed, 500) }) } }), a.fn[f] = function (b) { return this.each(function () { a.data(this, "plugin_" + f) || a.data(this, "plugin_" + f, new e(this, b)) }) } }(jQuery, window, document);
+    2
+
+    3
+    $(window).on("load", function () {
+        4
+
+        5
+        $("#scrollerImage").infiniteScroller({
+            6
+ scrollOnMouseOver: true, resetOnMouseOut: true,
+            7
+            maxSpeed: 10,
+            8
+            speed: 1,
+            9
+          direction: 'left'
+10
+             
+11
+          
+12
+        });
+        13
+    });
+</script>
