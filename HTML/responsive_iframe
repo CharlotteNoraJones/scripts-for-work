@@ -1,6 +1,7 @@
 <div class="container">
-    <iframe class="responsive-iframe" src="https://ccboe.github.io/?page=1"></iframe>
+    <iframe class="responsive-iframe" src="/events?view=cal-month"></iframe>
 </div>
+
 <style>
     .container {
         position: relative;
@@ -21,3 +22,15 @@
         height: 100%;
     }
 </style>
+
+<!-- Removes the header and footer from a Thrillshare page. -->
+<script>
+    window.addEventListener("load", (event) => {
+        let iframe_contents = $(".responsive-iframe").contents()
+
+        iframe_contents.find("header").attr("style", "display: none");
+        iframe_contents.find("nav").attr("style", "display: none");
+        iframe_contents.find("#view-footer").attr("style", "display: none");
+
+    });
+</script>
