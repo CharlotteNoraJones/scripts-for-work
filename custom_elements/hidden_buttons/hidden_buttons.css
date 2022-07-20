@@ -1,0 +1,27 @@
+.hidden-button-section a{
+    text-decoration: none;
+  }
+  
+  .hidden-button-section button {
+    min-height: 40px;
+    text-decoration: none;
+    background-color: #00000010;
+    border: none;
+    border-radius: 5px;
+    margin: 4px;
+    display: inline-block;
+  }
+  
+  .language-link {
+    display: none;
+  }
+  
+  .hidden-button-section button p {
+    font-family: 'Helvetica Now', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    padding: 0 15px;
+  }
+  
+  .hidden-button-section button:hover {
+    background-color: #adadad;
+  }

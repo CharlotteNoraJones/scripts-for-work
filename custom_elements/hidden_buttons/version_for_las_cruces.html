@@ -1,0 +1,220 @@
+<div class="hidden-button-section">
+  <!--Each hidden button section requires a unique identifier.-->
+  <div id="enrollment-process">
+    <button class="doc-button">
+      <p>Enrollment Process</p>
+    </button>
+    <a class="language-link" href="">
+      <button class="language-button">
+        <p>English</p>
+      </button>
+    </a>
+    <a class="language-link" href="">
+      <button class="language-button">
+        <p>Español</p>
+      </button>
+    </a>
+  </div>
+</div>
+<div class="hidden-button-section">
+  <!--Each hidden button section requires a unique identifier.-->
+  <div id="instructional-programs">
+    <button class="doc-button">
+      <p>Instructional Programs</p>
+    </button>
+    <a class="language-link" href="https://5il.co/1e7gw">
+      <button class="language-button">
+        <p>English</p>
+      </button>
+    </a>
+    <a class="language-link" href="https://5il.co/1e7gx">
+      <button class="language-button">
+        <p>Español</p>
+      </button>
+    </a>
+  </div>
+</div>
+<div class="hidden-button-section">
+  <!--Each hidden button section requires a unique identifier.-->
+  <div id="core-content">
+    <button class="doc-button">
+      <p>Instructional Materials for Core Content</p>
+    </button>
+    <a class="language-link" href="https://5il.co/1e7h2">
+      <button class="language-button">
+        <p>English</p>
+      </button>
+    </a>
+    <a class="language-link" href="https://5il.co/1e7h4">
+      <button class="language-button">
+        <p>Español</p>
+      </button>
+    </a>
+  </div>
+</div>
+<div class="hidden-button-section">
+  <!--Each hidden button section requires a unique identifier.-->
+  <div id="bilingual-programs">
+    <button class="doc-button">
+      <p>Assessments for Bilingual Programs</p>
+    </button>
+    <a class="language-link" href="https://5il.co/1e7hp">
+      <button class="language-button">
+        <p>English</p>
+      </button>
+    </a>
+    <a class="language-link" href="https://5il.co/1e7hq">
+      <button class="language-button">
+        <p>Español</p>
+      </button>
+    </a>
+  </div>
+</div>
+<div class="hidden-button-section">
+  <!--Each hidden button section requires a unique identifier.-->
+  <div id="engagement">
+    <button class="doc-button">
+      <p>Community Outreach: Parent/Family Engagment</p>
+    </button>
+    <a class="language-link" href="">
+      <button class="language-button">
+        <p>English</p>
+      </button>
+    </a>
+    <a class="language-link" href="">
+      <button class="language-button">
+        <p>Español</p>
+      </button>
+    </a>
+  </div>
+</div>
+<div class="hidden-button-section">
+  <!--Each hidden button section requires a unique identifier.-->
+  <div id="state-seal">
+    <button class="doc-button">
+      <p>Bilingualism/Biliteracy State Seal NM</p>
+    </button>
+    <a class="language-link" href="https://5il.co/1e7ia">
+      <button class="language-button">
+        <p>English</p>
+      </button>
+    </a>
+    <a class="language-link" href="https://5il.co/1e7ib">
+      <button class="language-button">
+        <p>Español</p>
+      </button>
+    </a>
+  </div>
+</div>
+<div class="hidden-button-section">
+  <!--Each hidden button section requires a unique identifier.-->
+  <div id="english-learner">
+    <button class="doc-button">
+      <p>English Learner Support</p>
+    </button>
+    <a class="language-link" href="https://5il.co/1dv0g">
+      <button class="language-button">
+        <p>English/Español/Arabic</p>
+      </button>
+    </a>
+  </div>
+</div>
+<div class="hidden-button-section">
+  <!--Each hidden button section requires a unique identifier.-->
+  <div id="questions">
+    <button class="doc-button">
+      <p>Frequently Asked Questions</p>
+    </button>
+    <a class="language-link" href="">
+      <button class="language-button">
+        <p>English</p>
+      </button>
+    </a>
+    <a class="language-link" href="https://5il.co/1e8o8">
+      <button class="language-button">
+        <p>Español</p>
+      </button>
+    </a>
+  </div>
+</div>
+<div class="hidden-button-section">
+  <!--Each hidden button section requires a unique identifier.-->
+  <div id="key-terms">
+    <button class="doc-button">
+      <p>Key Terms/Términos clave</p>
+    </button>
+    <a class="language-link" href="https://5il.co/1e8qj">
+      <button class="language-button">
+        <p>English</p>
+      </button>
+    </a>
+    <a class="language-link" href="https://5il.co/1e8qk">
+      <button class="language-button">
+        <p>Español</p>
+      </button>
+    </a>
+  </div>
+</div>
+
+<style>
+  .hidden-button-section a {
+    text-decoration: none;
+  }
+
+  .hidden-button-section button {
+    min-height: 40px;
+    text-decoration: none;
+    background-color: #00000010;
+    border: none;
+    border-radius: 5px;
+    margin: 4px;
+    display: inline-block;
+  }
+
+  .language-link {
+    display: none;
+  }
+
+  .hidden-button-section button p {
+    font-family: 'Helvetica Now', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 15px;
+  }
+
+  .hidden-button-section button:hover {
+    background-color: #adadad;
+  }
+</style>
+
+<script>
+
+
+  const doc_buttons = document.querySelectorAll(".hidden-button-section .doc-button");
+
+  let defualt_visibility = "inline-block";
+
+  doc_buttons.forEach(button => {
+    button.addEventListener("click", (event) => {
+      let parent_id = button.parentElement.id;
+
+
+      let lang_links_sel = "#" + parent_id + " .language-link";
+      let lang_links = document.querySelectorAll(lang_links_sel);
+
+      lang_links.forEach(link => {
+        toggle_visibility(link, defualt_visibility);
+      });
+    });
+  });
+
+  function toggle_visibility(element, defualt_visibility) {
+    let current_visibility = element.style.display;
+    if (current_visibility == defualt_visibility) {
+      element.style.display = "none";
+    } else {
+      element.style.display = defualt_visibility;
+    }
+  }
+
+</script>
