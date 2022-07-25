@@ -1,0 +1,13 @@
+/*
+* Centers the image in the middle column.
+* https://app.asana.com/0/1201388388286192/1202629867282402
+*/
+
+#footer-f1 div.row div.footer-column-main {
+flex-grow: 0 !important;
+}
+
+#footer-f1 div.row div.footer-columns ul li div a img {
+  max-width: 700px !important;
+  margin: 0 auto !important;
+}

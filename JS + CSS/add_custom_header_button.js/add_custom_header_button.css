@@ -1,0 +1,23 @@
+/*
+* Styles the Donate Button
+* https://app.asana.com/0/1201388388286192/1202608573107289
+*/
+
+div.donate {
+    cursor: pointer;
+    font: inherit;
+    text-align: left;
+    white-space: nowrap;
+    box-sizing: unset;
+    font-weight: 500 !important;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+div.donate a {
+    color: #001F5F;
+    text-decoration: none;
+}
