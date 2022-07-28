@@ -6,8 +6,8 @@
 window.addEventListener("load", (event) => {
 
     //Replace the vars below with the school and school's url
-    let school = "San Diego Riverside Charter School";
-    let schoolURL = "https://www.jvps.org/page/sdrcs"
+    let school = "Alternative Education Program";
+    let schoolURL = "/page/alternative-school";
 
 
     document.getElementById("schoolsbutton").addEventListener("click", (event) => {

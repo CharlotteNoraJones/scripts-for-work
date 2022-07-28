@@ -1,0 +1,32 @@
+/*
+* Styles the Best High School Badge
+* https://app.asana.com/0/1201388388286192/1202634469610452
+*/
+
+figure.gallery-icon {
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+  }
+  
+  figure.gallery-icon .best-school-img{
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 750px) {
+    figure.gallery-icon {
+      width: 50px;
+      right: 10px;
+      top: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 750px) {
+      figure.gallery-icon {
+      width: 100px;
+      right: 20px;
+      top: 20px
+    }
+  }
+  
+  /* Ends gallery overlay syling. */
