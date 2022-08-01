@@ -1,0 +1,26 @@
+/*
+* Syles the parallax section text
+* https://app.asana.com/0/1201388388286192/1202675494874888
+*/
+
+h2.parallax-text {
+    text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+    #view-container>div>div>div.image-container {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    h2.parallax-text {
+        color: white;
+        max-width: 80%;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+    }
+}
+
+/* End parallax text styling */

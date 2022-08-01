@@ -1,13 +1,13 @@
 /*
-* Adds "San Diego Riverside Charter School" to the Schools menu
+* Adds "Virtual Academy" to the Schools menu
 * https://app.asana.com/0/1201388388286192/1202413166576212
 */
 
 window.addEventListener("load", (event) => {
 
     //Replace the vars below with the school and school's url
-    let school = "Alternative Education Program";
-    let schoolURL = "/page/alternative-school";
+    let school = "Virtual Academy";
+    let schoolURL = "/o/ccss/page/virtual-school";
 
 
     document.getElementById("schoolsbutton").addEventListener("click", (event) => {
@@ -39,3 +39,4 @@ function makeSchoolListing(name, url) {
     return newSchool;
 }
 
+// end virtual academy code 
