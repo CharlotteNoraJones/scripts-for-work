@@ -4,19 +4,19 @@
 */
 
 #footer-f1 div.row {
-  justify-content: space-between
+  justify-content: space-between !important;
   }
   
   #footer-f1 div div.footer-column-main {
-    flex-grow: 0;
-    padding-right: 0;
+    flex-grow: 0 !important;
+    padding-right: 0 !important;
   }
   
   #footer-f1 div div.footer-columns {
-    flex-grow: 0;
-    padding-right: 0;
+    flex-grow: 0 !important;
+    padding-right: 0 !important;
   }
   
   #footer-f1 div div.footer-columns img {
-    min-width: 300px;
+    min-width: 300px !important;
   }

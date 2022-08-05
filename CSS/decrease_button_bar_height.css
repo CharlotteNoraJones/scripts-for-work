@@ -1,0 +1,14 @@
+/*
+* Decreases the height of the button bar. 
+* https://app.asana.com/0/1201388388286192/1202706607848169
+*/
+
+#buttons-b3 div div {
+    max-height: 100px !important;
+  }
+  
+  #buttons-b3 div div a {
+    padding: 0 !important;
+    height: fit-content !important;
+    margin: auto !important;
+  }
