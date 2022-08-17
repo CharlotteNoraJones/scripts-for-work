@@ -1,0 +1,16 @@
+/*
+* Styles the last column in the footer when additional text is added. 
+* https://app.asana.com/0/1201388388286192/1202780473298081
+*/
+
+#footer-f1 div.row div.footer-column-last {
+  max-width: 200px;
+}
+
+#footer-f1 div.row div.footer-column-last p {
+  color: white;
+}
+
+#footer-f1 div.row div.footer-column-last a {
+  color: white;
+}

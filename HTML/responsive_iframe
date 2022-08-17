@@ -1,5 +1,5 @@
 <div class="container">
-    <iframe class="responsive-iframe" src="/events?view=cal-month"></iframe>
+    <iframe class="responsive-iframe" src="/events?view=cal-month" frameborder="0"></iframe>
 </div>
 
 <style>
