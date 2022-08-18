@@ -1,0 +1,24 @@
+/*
+* Styles the additional link in the header. 
+* https://app.asana.com/0/1201388388286192/1202786558834549
+*/
+
+.header-link {
+    color: #22113b;
+    text-decoration: none;
+  }
+  
+  .header-link h2 {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #22113b;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  @media only screen and (max-width = 960px) {
+
+  }
