@@ -16,17 +16,17 @@ function calculateTax() {
     let total2Field = document.querySelector("#total-1-2-3");
 
     let renovationsCost = (0.264-0.206)*(houseValue/100)
-    renovationsCostField.innerHTML = renovationsCost;
+    renovationsCostField.innerHTML = renovationsCost.toFixed(2);
 
     let operatingCost = 0.07*(houseValue/100);
-    operatingCostField.innerHTML = operatingCost;
+    operatingCostField.innerHTML = operatingCost.toFixed(2);;
 
     let gymCost = 0.059*(houseValue/100);
-    gymCostField.innerHTML = gymCost;
+    gymCostField.innerHTML = gymCost.toFixed(2);;
 
     let total1 = renovationsCost + operatingCost;
-    total1Field.innerHTML = total1;
+    total1Field.innerHTML = total1.toFixed(2);;
     
     let total2 = renovationsCost + operatingCost + gymCost;
-    total2Field.innerHTML = total2;
+    total2Field.innerHTML =total2.toFixed(2);;
 }

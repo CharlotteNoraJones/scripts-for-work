@@ -5,37 +5,51 @@
     <meta name="viewport" content="width=device-width">
     <title>Tax Calculator</title>
     <script src="TaxCalculator.js"></script>
+    <link rel="stylesheet" href="TaxCalculatorStyle.css">
 </head>
 
 <body>
-    <div class="calculator-header">
-        <form>
-            <label>Assessed Value of House: </label>
-            <input type="text" name="house-value" id="house-value" class="monetary-value">
-        </form>
-        <p>(Shown on your tax bill, not your purchase price.)</p>
-    </div>
-    <div class="calculator-body">
-        <h1>Average incremental increase in property taxes for property</h1>
-        <div class="calculator-row">
-            <p>Question 1 Additions and Renovations to all four schools</p>
-            <p class="output monetary-value" id="renovations-cost">0.00</p>
+    <div id="tax-calculator">
+        <div id="calculator-header">
+            <h1>Tax Calculator</h1>
+            <form class="value-entry">
+                <label>Assessed Value of House: </label>
+                <input type="text" name="house-value" id="house-value" class="monetary-value">
+            </form>
+            <p>(Shown on your tax bill, not your purchase price.)</p>
         </div>
-        <div class="calculator-row">
-            <p>Question 2 Operating costs</p>
-            <p class="output monetary-value" id="operating-cost">0.00</p>
-        </div>
-        <div class="calculator-row">
-            <p>Question 3 New Gym</p>
-            <p class="output monetary-value" id="gym-cost">0.00</p>
-        </div>
-        <div class="calculator-row">
-            <p>Total Question 1 and Question 2</p>
-            <p class="output monetary-value" id="total-1-2">0.00</p>
-        </div>
-        <div class="calculator-row">
-            <p>Total Question 1,2, and 3</p>
-            <p class="output monetary-value" id="total-1-2-3"></p>
+        <div id="calculator-body">
+            <h2>Average incremental increase in property taxes for property</h2>
+            <div class="calculator-row">
+                <p>Question 1 Additions and Renovations to all four schools</p>
+                <div class="output-field">
+                    <p class="output monetary-value" id="renovations-cost">0</p>
+                </div>
+            </div>
+            <div class="calculator-row">
+                <p>Question 2 Operating costs</p>
+                <div class="output-field">
+                    <p class="output monetary-value" id="operating-cost">0</p>
+                </div>
+            </div>
+            <div class="calculator-row">
+                <p>Question 3 New Gym</p>
+                <div class="output-field">
+                    <p class="output monetary-value" id="gym-cost">0</p>
+                </div>
+            </div>
+            <div class="calculator-row">
+                <p>Total Question 1 and Question 2</p>
+                <div class="output-field">
+                    <p class="output monetary-value" id="total-1-2">0</p>
+                </div>
+            </div>
+            <div class="calculator-row">
+                <p>Total Question 1,2, and 3</p>
+                <div class="output-field">
+                    <p class="output monetary-value" id="total-1-2-3">0</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>

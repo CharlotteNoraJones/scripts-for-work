@@ -1,0 +1,47 @@
+#tax-calculator {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+#calculator-header {
+    text-align: center;
+}
+
+#calculator-header label {
+    font-weight: bold;
+}
+
+.monetary-value::before {
+    content: "$";
+}
+
+#calculator-body{
+    padding: 0 20px;
+}
+
+#calculator-body .calculator-row p {
+    display: inline-block;
+}
+
+#calculator-body h2 {
+    text-align: center;
+}
+
+#calculator-body .calculator-row * {
+    display: inline-block;
+}
+
+#calculator-body .calculator-row .output-field {
+    width: 120px;
+    height: 30px;
+    float: right;
+    background-color: bisque;
+    text-align: center;
+    vertical-align: middle;
+}
+#calculator-body .calculator-row .output-field p{
+    line-height: 30px;
+    margin: 0 auto;
+}
