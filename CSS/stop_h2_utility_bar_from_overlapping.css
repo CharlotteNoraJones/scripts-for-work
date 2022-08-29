@@ -1,0 +1,15 @@
+/*
+* Prevents the h2 utility bar from covering the title. 
+* https://app.asana.com/0/1201388388286192/1202832878374050
+*/
+
+@media only screen and (max-width: 1330px) and (min-width: 1281px) {
+    #h2 svg.sloped-edge {
+        display: none;
+    }
+
+    #h2 div {
+        border-radius: 0 0 0 32px;
+    }
+
+}
