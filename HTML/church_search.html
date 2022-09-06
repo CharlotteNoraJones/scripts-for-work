@@ -1,0 +1,56 @@
+<form id="church-search-form">
+    <label for="text-search">Search Churches: </label>
+    <input type="text" name="text-search" id="text-search">
+</form>
+
+<script>
+    // Our approach is to simply hide all cards that don't contain the content the user is searching for. 
+
+    window.addEventListener("load", (event) => {
+
+        // Stops the form from submitting. 
+        var search_form = document.getElementById("church-search-form");
+        function handleForm(event) { event.preventDefault(); }
+        search_form.addEventListener('submit', handleForm);
+
+        let church_cards = document.querySelectorAll(".card-block");
+        let search_field = document.querySelector("#text-search");
+
+        search_field.addEventListener("input", (event) => {
+            let search_input = search_field.value;
+
+            searchChurchs(church_cards, search_input);
+
+        });
+
+    });
+
+    function searchChurchs(church_list, search_text) {
+        restoreChurchBlocks(church_list);
+        if (search_text != "") {
+            hideChurchBlocks(church_list, search_text);
+        }
+
+    }
+
+    function hideChurchBlocks(base_node_list, search_text) {
+        // Hides all nodes's parents in base_node_list that don't contain search_text in their innerHTML
+        // This function is not case sensitive. 
+
+        for (const value of base_node_list.values()) {
+            content = value.innerHTML.toLowerCase();
+            search_text = search_text.toLowerCase();
+            if (!(content.includes(search_text))) {
+                value.parentNode.style.display = "none"; // We hide the block
+            }
+        }
+    }
+
+    function restoreChurchBlocks(node_list) {
+        // Restores the church card's block parents to block, their original display setting. 
+        for (const value of node_list.values()) {
+            value.parentNode.style.display = "block";
+        }
+    }
+
+</script>
